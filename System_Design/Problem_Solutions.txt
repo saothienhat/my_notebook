@@ -1,0 +1,37 @@
+
+
+
+--------------------
+* Problem:
+
+* Solution:
+
+* Tags: XXXX
+
+
+--------------------
+* Problem: check one item existed in a huge data set 
+
+* Solution: Bloom Filter
+- Ref: https://www.geeksforgeeks.org/bloom-filters-introduction-and-python-implementation/
+
+* Tags: XXXX
+
+--------------------
+* Problem: Flow from A state to B stage
+
+* Solution:
+- State machine
+
+* Tags: XXXX
+
+
+--------------------
+* Problem: Login/Logout on multi devices
+
+* Solution:
+- JWT include user_id + JIT (just in time) ==> store in Redis when logout to check logout from any device.
+The jit value genated when login and its like device id
+- Ref: https://www.youtube.com/watch?v=IEEdKxXk3SQ
+
+* Tags: security, JWT
