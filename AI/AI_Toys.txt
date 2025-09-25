@@ -1,0 +1,9 @@
+
+
+- Chat GPT: https://chat.openai.com/
+
+- Google Gemini: https://gemini.google.com/app
+    + Banana Nano: https://gemini.google/overview/image-generation
+    + NotebookLM:  https://notebooklm.google/
+
+- Microsoft Copilot: https://copilot.microsoft.com/

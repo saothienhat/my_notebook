@@ -1,3 +1,7 @@
 
 
 - #tip Generate SSH Key for GIT: https://docs.github.com/en/enterprise-server@3.12/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+
+
+- [GIT] Some useful GIT commands: https://saothienhat.wordpress.com/2020/01/15/git-some-useful-git-commands
+
