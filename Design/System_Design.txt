@@ -2,3 +2,7 @@
 
 
 - Slack Message structure design: https://docs.slack.dev/reference/block-kit
+
+- Design Youtube: https://www.youtube.com/watch?v=jPKTo1iGQiE
+
+- System Design Interview: A Step-By-Step Guide: https://www.youtube.com/watch?v=i7twT3x5yv8

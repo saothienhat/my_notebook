@@ -6,3 +6,4 @@
 - `wf`: work flow
 - `tool`
 - `contact`
+- `prompt`

@@ -7,3 +7,12 @@
     + NotebookLM:  https://notebooklm.google/
 
 - Microsoft Copilot: https://copilot.microsoft.com/
+
+
+
+
+
+
+**** Others 
+
+- #prompt Thư Viện & Nâng Cấp Prompt: https://prom.vn/home
