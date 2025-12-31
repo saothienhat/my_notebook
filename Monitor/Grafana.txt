@@ -1,0 +1,86 @@
+
+
+====================== Common Query  ======================
+
+
+- API Rate (by requests):
+
+sum(rate(armeria_server_requests_total{project="aaa-release"}[1m])) by (method)
+
+
+- API Failure Rate:
+
+
+sum(rate(armeria_server_requests_total{project="aaa-release", result="failure"}[1m])) by (method)
+
+
+- Request Rate (by server)
+
+
+sum(rate(armeria_server_requests_total{project="aaa-release"}[1m])) by (instance)
+
+
+------ System
+
+- System CPU Usage:
+
+system_cpu_usage{project="aaa-release"}
+
+
+- JVM Heap:
+
+
+sum(jvm_memory_used_bytes{project="aaa-release", area="heap"}) by (instance)
+
+
+- Start time:
+
+max(process_start_time_seconds{project="aaaa-release"}*1000)
+
+- Up Server time:
+
+max(process_uptime_seconds{project="aaa-release"})
+
+- Server Heap:
+
+sum(jvm_memory_used_bytes{project="aaa-release", area="heap"}) by (instance) / sum(jvm_memory_max_bytes{project="aaa-release", area="heap"}) by (instance)
+
+
+- Server CPU:
+
+system_cpu_usage{project="aaa-release"}
+
+- JVM Memory Usage (Heap): 
+
+sum(jvm_memory_used_bytes{farm="aaa-api-real", area="heap"}) by (instance)
+
+- JVM Memory Usage (Non Heap)
+
+
+sum(jvm_memory_used_bytes{farm="aaa-api-real", area="nonheap"}) by (instance)
+
+- JVM Live Thread:
+
+jvm_threads_live_threads{farm="aaa-api-real"}
+
+
+
+---- Client (External API)
+
+- Client Request Rate:
+
+sum(label_replace(irate(http_client_requests_seconds_count{project="aaa-internal", client_name="bbb.com"}[1m]), "domain", "$1", "uri", "^([^?]+).*")) by (domain)
+
+- Client Request Time (ms):
+
+sum(label_replace(rate(http_client_requests_seconds_sum{project="aaa-internal", client_name="bbb.com"}[1m]), "domain", "$1", "uri", "^([^?]+).*")) by (domain) / sum(label_replace(rate(http_client_requests_seconds_count{project="aaa-internal", client_name="bbb.com"}[1m]), "domain", "$1", "uri", "^([^?]+).*")) by (domain)
+
+
+- Client Request Failure:
+
+sum(rate(http_client_requests_seconds_count{project="aaa-internal", client_name="bbb.com", status!="200"}[1m])) by (uri)
+
+- External Failure Rate:
+
+sum(rate(rop_seconds_count{farm="aaa-api-real", status!="200"}[1m]))
+

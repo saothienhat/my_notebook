@@ -14,6 +14,9 @@
 
 * Solution: Bloom Filter
 - Ref: https://www.geeksforgeeks.org/bloom-filters-introduction-and-python-implementation/
+- Solutions:
+    - Use Bloom Filder by Google Guava
+    - Use Bloom Filder by Redis (Redison)
 
 * Tags: XXXX
 
