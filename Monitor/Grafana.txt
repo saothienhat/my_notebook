@@ -41,6 +41,12 @@ max(process_start_time_seconds{project="aaaa-release"}*1000)
 
 max(process_uptime_seconds{project="aaa-release"})
 
+
+- Throughput:
+
+sum(irate(server_requests_total{project="aaaa-internal"}[1m]))
+
+
 - Server Heap:
 
 sum(jvm_memory_used_bytes{project="aaa-release", area="heap"}) by (instance) / sum(jvm_memory_max_bytes{project="aaa-release", area="heap"}) by (instance)
