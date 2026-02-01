@@ -1,0 +1,56 @@
+OpenSpec (gần 20k star) là một công cụ spec-driven cực kỳ hữu ích để tạo spec cho AI trước khi dùng vibe coding. Thay vì để AI “code theo cảm giác”, OpenSpec giúp bạn xác định rõ ý định, phạm vi, ràng buộc và kế hoạch trước khi cho AI bắt đầu sinh code.
+
+OpenSpec giải quyết vấn đề gì?
+Trong vibe coding thuần, AI thường:
+ • Hiểu sai yêu cầu do thiếu ngữ cảnh
+ • Code nhanh nhưng lệch mục tiêu ban đầu
+ • Khó review vì không biết “tại sao lại code như vậy”
+
+OpenSpec đưa thêm một lớp spec rõ ràng nằm giữa ý tưởng và code, giúp AI làm việc có định hướng hơn.
+
+OpenSpec là gì?
+ • Framework mã nguồn mở, tập trung vào spec-driven development cho AI-assisted coding
+ • Spec được lưu trực tiếp trong repository dưới dạng markdown, trở thành Source of Truth cho cả con người và AI
+ • Không phụ thuộc model hay API cụ thể, có thể dùng với nhiều AI coding agent khác nhau
+
+Workflow cốt lõi của OpenSpec
+ • Proposal: mô tả rõ tính năng, mục tiêu, phạm vi
+ • Design: làm rõ cách tiếp cận, kiến trúc, ràng buộc
+ • Tasks: phân rã thành các bước cụ thể cho AI hoặc dev
+ • Apply: AI/code thực thi đúng theo spec đã thống nhất
+ • Archive: đóng spec, lưu vết quyết định và thay đổi
+
+Workflow này đặc biệt hiệu quả khi làm dự án lớn, dự án nhiều người, hoặc dùng nhiều AI agent song song.
+
+Vì sao OpenSpec rất hợp để dùng trước vibe coding?
+ • Giúp AI hiểu “bức tranh tổng thể” trước khi viết dòng code đầu tiên
+ • Giảm số vòng sửa đi sửa lại do hiểu sai yêu cầu
+ • Review dễ hơn vì reviewer đọc spec trước, không phải đoán ý đồ từ code
+ • Rất phù hợp cho legacy/brownfield project, nơi thay đổi nhỏ cũng có rủi ro lớn
+
+Các IDE & môi trường mà OpenSpec hỗ trợ tốt
+OpenSpec không khóa vào một IDE cụ thể, nhưng được thiết kế để dùng mượt với các môi trường phổ biến hiện nay:
+ • VS Code (phổ biến nhất khi kết hợp với Copilot, Claude, Cursor…)
+ • Cursor (AI-first IDE, rất hợp với spec-driven workflow)
+ • Windsurf (Codeium)
+ • Antigravity
+ • Các IDE khác miễn là có thể làm việc với markdown và repo
+ • CLI / Terminal workflow (Neovim, dev thích làm việc qua command line)
+
+Nói cách khác, OpenSpec sống trong repo, không phụ thuộc IDE — IDE chỉ là nơi bạn và AI “tiêu thụ” spec đó.
+
+Đánh giá từ cộng đồng dev
+ • Spec rõ ràng giúp AI code “đi đúng đường” hơn vibe coding thuần
+ • Đặc biệt hữu ích khi task phức tạp hoặc nhiều file liên quan
+ • Điểm cần lưu ý: nếu chỉ làm feature nhỏ, nhanh, thì việc viết spec chi tiết có thể hơi dư thừa
+
+Kết luận
+OpenSpec không thay thế vibe coding, mà nâng cấp vibe coding.
+Nếu bạn muốn AI code nhanh nhưng vẫn đúng ý, dễ kiểm soát và dễ review, thì việc tạo spec bằng OpenSpec trước khi cho AI code là một bước rất đáng đầu tư.
+
+#tinix #vibecoding
+
+
+
+
+
